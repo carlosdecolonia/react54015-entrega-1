@@ -37,6 +37,7 @@ export default function ItemListContainer() {
       <section className="item-list-container">
         {productos.map(( item) => (
           <div key={item.id}>
+            <img src={item.imagen} />
           <h2 >{item.nombre}</h2>
           <p>Precio = {item.precio}</p>
           </div>

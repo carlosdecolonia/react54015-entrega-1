@@ -6,7 +6,8 @@
       "stock": 10,
       "descripcion": "Potente laptop gaming con procesador Intel Core i7 y tarjeta gráfica NVIDIA GeForce RTX 3080.",
       "categoria": "Hardware",
-      "imagen": "ruta/a/imagen1.jpg"
+      "imagen": "/img/logo_react.jpg"
+      
     },
     {
       "id": "hardware-02",

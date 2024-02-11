@@ -12,7 +12,7 @@ function NavBar() {
 
 
         <Link to="/">
-          <img src="src/assets/logo_react.jpg" alt="Logo mi Tienda" />
+          <img src="img/logo_react.jpg" alt="Logo mi Tienda" />
         </Link>
 
         <nav  >
