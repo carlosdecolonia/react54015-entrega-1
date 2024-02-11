@@ -1,29 +1,36 @@
-import {Navbar, Container, Nav} from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link, NavLink } from "react-router-dom";
+
 import "./NavBar.css";
 import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {
   return (
-   // <>
-      <Navbar bg="light" data-bs-theme="light" fixed="top">
-        <Container>
-        <Navbar.Brand href="#home">
-          <img src="src/assets/logo_react.jpg" alt="Logo mi Tienda"/>
-          </Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Todos</Nav.Link>
-            <Nav.Link href="#hardware">Hardware</Nav.Link>
-            <Nav.Link href="#software">Software</Nav.Link>
-            <Nav.Link href="#accesorios">Accesorios</Nav.Link>
-            <Nav.Link href="#outlet" id="outlet">Outlet</Nav.Link>
+    // <>
+    <Navbar bg="light" data-bs-theme="light" fixed="top">
+      <Container>
 
-          </Nav>
-          <Nav className="ml-auto">
-              <Nav.Link href="#shopping-cart"> <CartWidget /> </Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-   // </>
+
+        <Link to="/">
+          <img src="src/assets/logo_react.jpg" alt="Logo mi Tienda" />
+        </Link>
+
+        <nav  >
+          <NavLink to="/categoria/Hardware" >Hardware</NavLink>
+          <NavLink to="/categoria/Software">Software</NavLink>
+          <NavLink to="/categoria/Accesorios">Accesorios</NavLink>
+          <NavLink to="/categoria/Outlet">Outlet</NavLink>
+        </nav>
+
+
+
+
+        <Nav className="ml-auto">
+          <Nav.Link href="#shopping-cart"> <CartWidget /> </Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
+    // </>
   );
 }
 
